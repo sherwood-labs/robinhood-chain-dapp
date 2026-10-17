@@ -1,0 +1,22 @@
+{
+  "name": "robinhood-chain-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Learning copy of the Robinhood Chain index-basket dapp",
+  "license": "MIT",
+  "scripts": {
+    "build:contracts": "forge build --root contracts",
+    "test:contracts": "forge test --root contracts --no-match-path 'test/fork/*'",
+    "test:fork": "forge test --root contracts --match-path 'test/fork/*' -vv",
+    "test": "pnpm run test:contracts",
+    "fmt:contracts": "forge fmt --root contracts",
+    "deploy:local": "node scripts/deploy.mjs local",
+    "deploy:testnet": "node scripts/deploy.mjs testnet",
+    "deploy:mainnet": "node scripts/deploy.mjs mainnet",
+    "smoke": "node scripts/smoke.mjs",
+    "dev": "pnpm --filter frontend dev",
+    "build:frontend": "pnpm --filter frontend build",
+    "lint:frontend": "pnpm --filter frontend lint",
+    "check": "pnpm run build:contracts && pnpm run test:contracts && pnpm run build:frontend"
+  }
+}
