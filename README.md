@@ -1,9 +1,5 @@
 # robinhood-chain-dapp
 
-## Credits
-
-Based on [hummusonrails/robinhood-chain-dapp-example](https://github.com/hummusonrails/robinhood-chain-dapp-example) by Ben Greenberg, used under the MIT License (see [LICENSE](LICENSE)).
-
 An application for minting and redeeming index baskets of tokenized stocks on [Robinhood Chain](https://docs.robinhood.com/chain/), an Arbitrum Orbit Layer 2. One basket share is a fixed mix of Stock Tokens. Depositing that mix mints shares. Burning shares returns the mix. A Chainlink USD feed, or a mock of one, prices the share.
 
 The interface is a five-step walkthrough. A [developer deep dive](apps/frontend/src/app/learn/page.tsx) shows the same contracts beside the source. The upstream project and its hosted testnet demo are [hummusonrails/robinhood-chain-dapp-example](https://github.com/hummusonrails/robinhood-chain-dapp-example) and [robinhood-chain-dapp.vercel.app](https://robinhood-chain-dapp.vercel.app).
